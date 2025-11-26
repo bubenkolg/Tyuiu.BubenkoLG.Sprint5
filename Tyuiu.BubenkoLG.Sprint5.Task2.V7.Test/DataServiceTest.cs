@@ -1,0 +1,21 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using Tyuiu.BubenkoLG.Sprint5.Task2.V7.Lib;
+using System.IO;
+
+namespace Tyuiu.BubenkoLG.Sprint5.Task2.V7.Test
+{
+    [TestClass]
+    public sealed class DataServiceTest
+    {
+        [TestMethod]
+        public void CheckedExistsFile()
+        {
+            string path = @"C:\Users\Людмила Георгиевна\Desktop\source\repos\Tyuiu.BubenkoLG.Sprint5\Tyuiu.BubenkoLG.Sprint5.Task2.V7\bin\Debug\net8.0\OutPutFileTask2.csv";
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+            bool wait = true;
+            Assert.AreEqual(wait, fileExists);
+        }
+    }
+}
