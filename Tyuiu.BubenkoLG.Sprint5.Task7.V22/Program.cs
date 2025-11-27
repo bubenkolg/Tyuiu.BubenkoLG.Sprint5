@@ -28,9 +28,8 @@ namespace Tyuiu.BubenkoLG.Sprint5.Task7.V22
             Console.WriteLine("* данных. Заменить все знаки препинания на #. Полученный результат         ");
             Console.WriteLine("* сохранить в файл OutPutDataFileTask7V22.txt.                             ");
 
-            string path1 = $@"{Path.GetTempPath()}\InPutDataFileTask7V22.txt";
-            string path2 = $@"{Path.GetTempPath()}\OutPutDataFileTask7V22.txt";
-
+            string path1 = @"C:\Users\Людмила Георгиевна\Desktop\source\repos\Tyuiu.BubenkoLG.Sprint5\Tyuiu.BubenkoLG.Sprint5.Task7.V22\bin\Debug\net8.0\InPutDataFileTask7V22.txt";
+            string path2 = @"C:\Users\Людмила Георгиевна\Desktop\source\repos\Tyuiu.BubenkoLG.Sprint5\Tyuiu.BubenkoLG.Sprint5.Task7.V22\bin\Debug\net8.0\OutPutDataFileTask7V22.txt";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
@@ -39,11 +38,14 @@ namespace Tyuiu.BubenkoLG.Sprint5.Task7.V22
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               ");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(" Данные записаны в файл: " + path2);
-            using StreamReader reader = new(path2);
+            string res = ds.LoadDataAndSave(path1);
+
+            Console.WriteLine(" Данные записаны в файл: " + res);
+
+            using StreamReader reader = new(res);
             string strX = reader.ReadToEnd();
 
-            Console.WriteLine(strX);
+            Console.WriteLine("Данные: " + strX);
 
             Console.ReadKey();
         }
