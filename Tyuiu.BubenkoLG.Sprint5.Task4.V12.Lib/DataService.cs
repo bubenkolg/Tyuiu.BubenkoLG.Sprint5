@@ -14,9 +14,10 @@ namespace Tyuiu.BubenkoLG.Sprint5.Task4.V12.Lib
         public double LoadFromDataFile(string path)
         {
             string strX = File.ReadAllText(path);
+            strX = strX.Replace(".",",");
             double x = Double.Parse(strX);
             double res = Math.Round(Math.Cos(x * x * x) + x / 2, 3);
-            return 1.989;
+            return res;
         }
     }
 }
