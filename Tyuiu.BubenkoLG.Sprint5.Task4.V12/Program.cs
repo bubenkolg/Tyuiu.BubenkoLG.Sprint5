@@ -33,9 +33,9 @@ namespace Tyuiu.BubenkoLG.Sprint5.Task4.V12
             Console.WriteLine("*                2                                                         ");
             Console.WriteLine("* Вычислить значение по формуле (Полученное значение округлить до трёх     ");
             Console.WriteLine("* знаков после запятой) и вернуть полученный результат на консоль.         ");
-            //string path = @"C:\Users\Людмила Георгиевна\Desktop\source\repos\Tyuiu.BubenkoLG.Sprint5\Tyuiu.BubenkoLG.Sprint5.Task4.V12\bin\Debug\net8.0\InPutDataFileTask4V12.txt";
+            string path = @"C:\Users\Людмила Георгиевна\Desktop\source\repos\Tyuiu.BubenkoLG.Sprint5\Tyuiu.BubenkoLG.Sprint5.Task4.V12\bin\Debug\net8.0\InPutDataFileTask4V12.txt";
 
-            string path = $@"{Path.GetTempPath()}\InPutDataFileTask4V12.txt";
+            //string path = $@"{Path.GetTempPath()}\InPutDataFileTask4V12.txt";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");

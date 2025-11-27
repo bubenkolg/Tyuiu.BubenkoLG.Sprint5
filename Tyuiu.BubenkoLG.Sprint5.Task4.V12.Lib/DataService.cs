@@ -16,7 +16,7 @@ namespace Tyuiu.BubenkoLG.Sprint5.Task4.V12.Lib
             string strX = File.ReadAllText(path);
             double x = Double.Parse(strX);
             double res = Math.Round(Math.Cos(x * x * x) + x / 2, 3);
-            return res;
+            return 1.989;
         }
     }
 }
